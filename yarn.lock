@@ -8866,9 +8866,9 @@ react-app-polyfill@^1.0.6:
     whatwg-fetch "^3.0.0"
 
 react-cumulio@^0.1.0-beta.1:
-  version "0.1.0-beta.1"
-  resolved "https://registry.yarnpkg.com/react-cumulio/-/react-cumulio-0.1.0-beta.1.tgz#4b67e41bf0c7c556e5ec99da279a18d04a3885f8"
-  integrity sha512-xF5Qwv+pmGAfQMIBEg3Gt3HauLbGrzfEAFR78615vZ831x6Yzp60I8PBj/x58q3JNtn5v6IeGaxpBnC/gdWEfg==
+  version "0.1.0-beta.2"
+  resolved "https://registry.yarnpkg.com/react-cumulio/-/react-cumulio-0.1.0-beta.2.tgz#e6f5661f2aecf8cd17adb8f999d1329626e0578d"
+  integrity sha512-SUkmRu/aHEQn80N9ggliV+7bOv85D89vpxwPwDHVA8oY7FTHfShW+yHa423TaFyXpQJ0bs1+jt2J7j4OtIAzTw==
   dependencies:
     "@react-hook/window-size" "^1.0.12"
     "@use-it/event-listener" "^0.1.3"
