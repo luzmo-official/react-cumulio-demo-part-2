@@ -1,10 +1,9 @@
 import React, { useReducer, useState } from 'react';
-import { CumulioComponent, CumulioContext, initialState, reducer } from "react-cumulio";
+import { CumulioDashboardComponent } from '@cumul.io/react-cumulio-dashboard'
 import './styles.scss';
 
 const Dashboards = () => {
     const [activeDashboard, setActiveDashboard] = useState(0);
-    const [state, dispatch] = useReducer(reducer, initialState);
 
     const dashboards = [
         {
@@ -33,15 +32,13 @@ const Dashboards = () => {
                 </ul>
             </div>
             <div className="content" role="main">
-                <CumulioContext.Provider value={{ state, dispatch }}>
-                    <CumulioComponent
-                        dashboardId={dashboards[activeDashboard].dashboardId}
-                        loaderBackground="rgb(238, 243, 246)"
-                        loaderFontColor="rgb(0, 45, 112)"
-                        loaderSpinnerColor="rgb(0, 54, 136)"
-                        loaderSpinnerBackground="rgb(194, 209, 233)"
-                    />
-                </CumulioContext.Provider>
+                <CumulioDashboardComponent
+                    dashboardId={dashboards[activeDashboard].dashboardId}
+                    loaderBackground="rgb(238, 243, 246)"
+                    loaderFontColor="rgb(0, 45, 112)"
+                    loaderSpinnerColor="rgb(0, 54, 136)"
+                    loaderSpinnerBackground="rgb(194, 209, 233)"
+                />
             </div>
         </div>
     );
